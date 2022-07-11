@@ -46,8 +46,8 @@ export class RobotHands extends BaseHands{
         this.clickOnDomElement(text);
     }
 
-    clickOnFirstItem(text:string){
-        this.clickOnDomElement(text);
+    clickOnFirstItem(text:string,index:number){
+        this.clickOnDomWithIndex(text,index);
 
     }
 
@@ -123,6 +123,8 @@ export class RobotHands extends BaseHands{
     addCreditCard(dom:string){
         this.scrollToLast(dom);
     }
+
+    
 
     
 }

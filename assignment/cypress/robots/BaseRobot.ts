@@ -217,6 +217,10 @@ export class BaseHands {
     return this;
        
   }
+
+  clickOnDomWithIndex(dom:string,index:number){
+      cy.get(dom).eq(index).click();
+  }
 }
 
 
