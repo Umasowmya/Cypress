@@ -120,8 +120,8 @@ export class RobotHands extends BaseHands{
         this.clickOnDomElement(dom);
     }
 
-    addCreditCard(dom:string){
-        this.scrollToLast(dom);
+    addCreditCard(dom:string,index:number){
+        this.scrollToLastWithIndex(dom,index);
     }
 
     

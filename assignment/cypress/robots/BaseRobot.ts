@@ -221,6 +221,10 @@ export class BaseHands {
   clickOnDomWithIndex(dom:string,index:number){
       cy.get(dom).eq(index).click();
   }
+
+  scrollToLastWithIndex(dom:string,index:number){
+      cy.get(dom).eq(index).scrollIntoView().click()
+  }
 }
 
 
